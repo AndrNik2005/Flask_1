@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Фламир М - продажа трикотажных изделий{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <header>
+        <h2>Фламир М - продажа трикотажных изделий</h2>
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/category/jumpers">джемпера</a></li>
+                <li><a href="/category/cardigans">кардиганы</a></li>
+                <li><a href="/category/accessories">аксессуары</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 "Фламир М"</p>
+    </footer>
+</body>
+
+</html>
