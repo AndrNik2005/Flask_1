@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Вход - Фламир-М{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Вход</h2>
+    <form action="/setcookie" method="POST">
+        <label for="nm">Имя:</label>
+        <input type="text" id="nm" name="nm"><br><br>
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email"><br><br>
+        <input type="submit" value="Отправить">
+    </form>
+</div>
+{% endblock %}

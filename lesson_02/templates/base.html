@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Трикотажная фабрика "Фламир-М"{% endblock %}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1>Трикотажная фабрика "Фламир-М"</h1>
+        <h2>Производство трикотажных изделий на станках STOLL</h2>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Главная страница</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 "Фламир-М"</p>
+    </footer>
+</body>
+
+</html>
